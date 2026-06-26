@@ -513,7 +513,7 @@ class Component extends DCLogic {
       onClick: () => this.setState({ faq: s.faq===i ? -1 : i }),
       bodyStyle: `overflow:hidden;transition:max-height .35s ease,opacity .35s ease,padding .35s ease;max-height:${s.faq===i?'200px':'0'};opacity:${s.faq===i?1:0};padding:${s.faq===i?'0 0 22px':'0'};` }));
 
-    const rootStyle = { '--accent': accent, background:'#f4ead7', color:'#17120f', fontFamily:"'Hanken Grotesk',-apple-system,system-ui,sans-serif", minHeight:'100vh', overflowX:'hidden' };
+    const rootStyle = { '--accent': accent, background:'#f4ead7', color:'#17120f', fontFamily:"'Hanken Grotesk',-apple-system,system-ui,sans-serif", minHeight:'100vh', overflowX:'clip' };
 
     return { rootStyle, accent, showOffer, orderUrl:ORDER, reserveUrl:RESERVE,
       navItems, heroSwitch,

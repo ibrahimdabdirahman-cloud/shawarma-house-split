@@ -70,7 +70,7 @@
           <button onClick="{{ n.onClick }}" style="{{ n.style }}">{{ n.label }}</button>
         </sc-for>
         <a href="tel:02084883727" style="font:700 14px/1 'Hanken Grotesk',sans-serif;color:#17120f;text-decoration:none;border-left:1px solid rgba(23,18,15,.15);padding-left:24px">020 8488 3727</a>
-        <a href="{{ orderUrl }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:var(--accent,#e0421d);color:#fff;font:700 14px/1 'Hanken Grotesk',sans-serif;letter-spacing:.02em;padding:13px 20px;border-radius:999px;text-decoration:none;box-shadow:0 6px 16px rgba(224,66,29,.3)">Order Online →</a>
+        <a href="#order" data-masul-open="order" style="display:inline-flex;align-items:center;gap:8px;background:var(--accent,#e0421d);color:#fff;font:700 14px/1 'Hanken Grotesk',sans-serif;letter-spacing:.02em;padding:13px 20px;border-radius:999px;text-decoration:none;box-shadow:0 6px 16px rgba(224,66,29,.3)">Order Online →</a>
       </div>
     </div>
   </nav>
@@ -88,8 +88,8 @@
         <h1 style="font:400 clamp(46px,6.6vw,86px)/0.9 'Anton',sans-serif;text-transform:uppercase;margin:20px 0 0;letter-spacing:.005em">Fresh shawarma,<br>made daily in <span style="color:var(--accent,#e0421d)">Woolwich</span></h1>
         <p style="font:400 19px/1.55 'Hanken Grotesk',sans-serif;color:rgba(23,18,15,.7);max-width:480px;margin:22px 0 0">Generous wraps, hearty bowls and grilled favourites — bold seasoning, fresh ingredients, ready for fast collection on Plumstead Rd.</p>
         <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:30px">
-          <a href="{{ orderUrl }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--accent,#e0421d);color:#fff;font:700 16px/1 'Hanken Grotesk',sans-serif;padding:18px 30px;border-radius:999px;text-decoration:none;box-shadow:0 10px 26px rgba(224,66,29,.32)">Order Online →</a>
-          <a href="{{ reserveUrl }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:transparent;color:#17120f;font:700 16px/1 'Hanken Grotesk',sans-serif;padding:17px 28px;border-radius:999px;text-decoration:none;border:2px solid rgba(23,18,15,.2)">Book a Table</a>
+          <a href="#order" data-masul-open="order" style="display:inline-flex;align-items:center;gap:10px;background:var(--accent,#e0421d);color:#fff;font:700 16px/1 'Hanken Grotesk',sans-serif;padding:18px 30px;border-radius:999px;text-decoration:none;box-shadow:0 10px 26px rgba(224,66,29,.32)">Order Online →</a>
+          <a href="#booking" data-masul-open="booking" style="display:inline-flex;align-items:center;gap:10px;background:transparent;color:#17120f;font:700 16px/1 'Hanken Grotesk',sans-serif;padding:17px 28px;border-radius:999px;text-decoration:none;border:2px solid rgba(23,18,15,.2)">Book a Table</a>
         </div>
         <div style="display:flex;gap:24px;flex-wrap:wrap;margin-top:30px;align-items:center">
           <div style="font:700 14px/1.3 'Hanken Grotesk',sans-serif"><span style="color:#f0a82c;font-size:16px">★★★★★</span><br><span style="color:rgba(23,18,15,.6);font-weight:500">Loved on Google</span></div>
@@ -120,7 +120,7 @@
         <h1 style="font:400 clamp(48px,8vw,104px)/0.88 'Anton',sans-serif;text-transform:uppercase;color:#f7efe0;margin:22px 0 0;max-width:760px">Big flavour.<br>Fast <span style="color:var(--accent,#e0421d)">collection.</span></h1>
         <p style="font:400 20px/1.5 'Hanken Grotesk',sans-serif;color:rgba(247,239,224,.82);max-width:480px;margin:22px 0 0">Halal shawarma, wraps and bowls made fresh every day at our Woolwich SE18 shop.</p>
         <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px">
-          <a href="{{ orderUrl }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--accent,#e0421d);color:#fff;font:700 16px/1 'Hanken Grotesk',sans-serif;padding:18px 30px;border-radius:999px;text-decoration:none;box-shadow:0 10px 26px rgba(224,66,29,.4)">Order Online →</a>
+          <a href="#order" data-masul-open="order" style="display:inline-flex;align-items:center;gap:10px;background:var(--accent,#e0421d);color:#fff;font:700 16px/1 'Hanken Grotesk',sans-serif;padding:18px 30px;border-radius:999px;text-decoration:none;box-shadow:0 10px 26px rgba(224,66,29,.4)">Order Online →</a>
           <button onClick="{{ goMenu }}" style="display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.12);color:#fff;font:700 16px/1 'Hanken Grotesk',sans-serif;padding:18px 30px;border-radius:999px;border:1px solid rgba(255,255,255,.3);cursor:pointer">View Menu</button>
         </div>
       </div>
@@ -139,8 +139,8 @@
       </div>
       <p style="font:400 19px/1.55 'Hanken Grotesk',sans-serif;color:rgba(23,18,15,.7);max-width:560px;margin:24px auto 0">Slow-cooked meats, fresh salad and signature sauces — made daily and ready for fast collection.</p>
       <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:28px">
-        <a href="{{ orderUrl }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--accent,#e0421d);color:#fff;font:700 16px/1 'Hanken Grotesk',sans-serif;padding:18px 30px;border-radius:999px;text-decoration:none;box-shadow:0 10px 26px rgba(224,66,29,.32)">Order Online →</a>
-        <a href="{{ reserveUrl }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:transparent;color:#17120f;font:700 16px/1 'Hanken Grotesk',sans-serif;padding:17px 28px;border-radius:999px;text-decoration:none;border:2px solid rgba(23,18,15,.2)">Book a Table</a>
+        <a href="#order" data-masul-open="order" style="display:inline-flex;align-items:center;gap:10px;background:var(--accent,#e0421d);color:#fff;font:700 16px/1 'Hanken Grotesk',sans-serif;padding:18px 30px;border-radius:999px;text-decoration:none;box-shadow:0 10px 26px rgba(224,66,29,.32)">Order Online →</a>
+        <a href="#booking" data-masul-open="booking" style="display:inline-flex;align-items:center;gap:10px;background:transparent;color:#17120f;font:700 16px/1 'Hanken Grotesk',sans-serif;padding:17px 28px;border-radius:999px;text-decoration:none;border:2px solid rgba(23,18,15,.2)">Book a Table</a>
       </div>
     </section>
     </sc-if>
@@ -193,7 +193,7 @@
           <div style="font:700 12px/1 'Hanken Grotesk',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--accent,#e0421d)">Order online · Collection only</div>
           <h2 style="font:400 clamp(32px,4.4vw,54px)/0.95 'Anton',sans-serif;text-transform:uppercase;color:#f7efe0;margin:14px 0 0">Skip the queue —<br>order for collection</h2>
           <p style="font:400 17px/1.55 'Hanken Grotesk',sans-serif;color:rgba(247,239,224,.7);margin:18px 0 0">Order fresh wraps, bowls and sides online and collect fast from our Woolwich SE18 shop. Get 10% off when you spend over £15.</p>
-          <a href="{{ orderUrl }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--accent,#e0421d);color:#fff;font:700 16px/1 'Hanken Grotesk',sans-serif;padding:18px 30px;border-radius:999px;text-decoration:none;margin-top:28px;box-shadow:0 10px 26px rgba(224,66,29,.4)">Order Online →</a>
+          <a href="#order" data-masul-open="order" style="display:inline-flex;align-items:center;gap:10px;background:var(--accent,#e0421d);color:#fff;font:700 16px/1 'Hanken Grotesk',sans-serif;padding:18px 30px;border-radius:999px;text-decoration:none;margin-top:28px;box-shadow:0 10px 26px rgba(224,66,29,.4)">Order Online →</a>
         </div>
         <div style="position:relative;z-index:1;font:400 clamp(80px,16vw,200px)/0.8 'Anton',sans-serif;color:rgba(244,234,215,.07);text-transform:uppercase;letter-spacing:.02em">SE18</div>
       </div>
@@ -277,7 +277,7 @@
       <div style="font:700 12px/1 'Hanken Grotesk',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--accent,#e0421d)">Fresh · Filling · Halal</div>
       <h1 style="font:400 clamp(44px,7vw,86px)/0.9 'Anton',sans-serif;text-transform:uppercase;margin:14px 0 0">The Menu</h1>
       <p style="font:400 17px/1.55 'Hanken Grotesk',sans-serif;color:rgba(23,18,15,.62);max-width:520px;margin:16px auto 0">Everything is made fresh to order. Prices shown are indicative — confirm at checkout when you order online.</p>
-      <a href="{{ orderUrl }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--accent,#e0421d);color:#fff;font:700 15px/1 'Hanken Grotesk',sans-serif;padding:16px 28px;border-radius:999px;text-decoration:none;margin-top:24px;box-shadow:0 10px 26px rgba(224,66,29,.3)">Order Online →</a>
+      <a href="#order" data-masul-open="order" style="display:inline-flex;align-items:center;gap:10px;background:var(--accent,#e0421d);color:#fff;font:700 15px/1 'Hanken Grotesk',sans-serif;padding:16px 28px;border-radius:999px;text-decoration:none;margin-top:24px;box-shadow:0 10px 26px rgba(224,66,29,.3)">Order Online →</a>
     </div>
 
     <div style="margin-top:54px">
@@ -337,7 +337,7 @@
       </sc-for>
     </div>
     <div style="text-align:center;margin-top:44px">
-      <a href="{{ orderUrl }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--accent,#e0421d);color:#fff;font:700 16px/1 'Hanken Grotesk',sans-serif;padding:18px 30px;border-radius:999px;text-decoration:none;box-shadow:0 10px 26px rgba(224,66,29,.3)">Order Online →</a>
+      <a href="#order" data-masul-open="order" style="display:inline-flex;align-items:center;gap:10px;background:var(--accent,#e0421d);color:#fff;font:700 16px/1 'Hanken Grotesk',sans-serif;padding:18px 30px;border-radius:999px;text-decoration:none;box-shadow:0 10px 26px rgba(224,66,29,.3)">Order Online →</a>
     </div>
   </div>
   </sc-if>
@@ -360,8 +360,8 @@
             <div style="display:flex;align-items:center;gap:10px;background:rgba(47,125,79,.1);color:#2f7d4f;padding:12px 16px;border-radius:12px;font:700 13px/1.3 'Hanken Grotesk',sans-serif">✓ 100% Halal-certified kitchen · Collection only</div>
           </div>
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
-            <a href="{{ orderUrl }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:var(--accent,#e0421d);color:#fff;font:700 15px/1 'Hanken Grotesk',sans-serif;padding:16px 24px;border-radius:999px;text-decoration:none">Order Online →</a>
-            <a href="{{ reserveUrl }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:transparent;color:#17120f;font:700 15px/1 'Hanken Grotesk',sans-serif;padding:15px 22px;border-radius:999px;text-decoration:none;border:2px solid rgba(23,18,15,.2)">Book a Table</a>
+            <a href="#order" data-masul-open="order" style="display:inline-flex;align-items:center;gap:10px;background:var(--accent,#e0421d);color:#fff;font:700 15px/1 'Hanken Grotesk',sans-serif;padding:16px 24px;border-radius:999px;text-decoration:none">Order Online →</a>
+            <a href="#booking" data-masul-open="booking" style="display:inline-flex;align-items:center;gap:10px;background:transparent;color:#17120f;font:700 15px/1 'Hanken Grotesk',sans-serif;padding:15px 22px;border-radius:999px;text-decoration:none;border:2px solid rgba(23,18,15,.2)">Book a Table</a>
           </div>
         </div>
       </div>
@@ -411,7 +411,7 @@
       <div>
         <div style="font:700 11px/1 'Hanken Grotesk',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--accent,#e0421d);margin-bottom:16px">Opening hours</div>
         <div style="font:400 14.5px/1.7 'Hanken Grotesk',sans-serif;color:rgba(244,234,215,.75)">Open daily<br>6:00 AM – 10:00 PM<br><span style="color:#2f7d4f;font-weight:700">100% Halal · Collection only</span></div>
-        <a href="{{ orderUrl }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:var(--accent,#e0421d);color:#fff;font:700 13.5px/1 'Hanken Grotesk',sans-serif;padding:13px 20px;border-radius:999px;text-decoration:none;margin-top:18px">Order Online →</a>
+        <a href="#order" data-masul-open="order" style="display:inline-flex;align-items:center;gap:8px;background:var(--accent,#e0421d);color:#fff;font:700 13.5px/1 'Hanken Grotesk',sans-serif;padding:13px 20px;border-radius:999px;text-decoration:none;margin-top:18px">Order Online →</a>
       </div>
     </div>
     <div style="max-width:1200px;margin:44px auto 0;padding-top:22px;border-top:1px solid rgba(244,234,215,.12);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font:500 12.5px/1.4 'Hanken Grotesk',sans-serif;color:rgba(244,234,215,.45)">
